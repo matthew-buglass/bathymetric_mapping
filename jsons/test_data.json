@@ -1,73 +1,80 @@
 {
     "head": {
-        "x": 5,
+        "x": 0,
         "y": 0,
-        "z": -3.2336458588262387,
+        "z": 0,
         "visited": false,
         "created": false,
         "adjacent_vertices": [],
-        "adjacent_edges": []
+        "adjacent_edges": [],
+        "adjacent_in_order_indices": []
     },
     "right": {
         "head": {
-            "x": 5,
-            "y": 5,
-            "z": -0.7898038275538621,
+            "x": 0,
+            "y": 1,
+            "z": -1,
             "visited": false,
             "created": false,
             "adjacent_vertices": [],
-            "adjacent_edges": []
+            "adjacent_edges": [],
+            "adjacent_in_order_indices": []
         },
         "right": {
             "head": {
-                "x": 9,
-                "y": 8,
-                "z": -2.293254871770027,
+                "x": 1,
+                "y": 1,
+                "z": 0,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
-                "adjacent_edges": []
+                "adjacent_edges": [],
+                "adjacent_in_order_indices": []
             },
             "right": {
                 "head": {
-                    "x": 7,
-                    "y": 6,
-                    "z": -1.244223025411391,
+                    "x": 4,
+                    "y": 2,
+                    "z": 12,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 7,
-                        "y": 8,
-                        "z": -0.925627561617583,
+                        "x": 5,
+                        "y": 3,
+                        "z": 16,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 8,
-                            "y": 8,
-                            "z": -1.9058281855634096,
+                            "x": 5,
+                            "y": 4,
+                            "z": 9,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 8,
-                                "y": 9,
-                                "z": -2.116024475402225,
+                                "x": 5,
+                                "y": 5,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -75,24 +82,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 7,
-                            "y": 7,
-                            "z": -0.8158945227043424,
+                            "x": 5,
+                            "y": 2,
+                            "z": 21,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 9,
-                                "y": 7,
-                                "z": -1.115754621282845,
+                                "x": 5,
+                                "y": 1,
+                                "z": 24,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 4,
+                                "y": 1,
+                                "z": 15,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -101,34 +123,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 5,
-                        "y": 6,
-                        "z": -2.144708950434617,
+                        "x": 3,
+                        "y": 2,
+                        "z": 5,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 6,
-                            "y": 6,
-                            "z": -0.9138679262428312,
+                            "x": 4,
+                            "y": 4,
+                            "z": 0,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 5,
-                                "y": 8,
-                                "z": -1.4552129094850863,
+                                "x": 4,
+                                "y": 3,
+                                "z": 7,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 3,
+                                "y": 3,
+                                "z": 0,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -136,24 +174,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 6,
-                            "y": 5,
-                            "z": -0.1381021301678087,
+                            "x": 2,
+                            "y": 1,
+                            "z": 3,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 7,
-                                "y": 5,
-                                "z": -2.1079608232394853,
+                                "x": 3,
+                                "y": 1,
+                                "z": 8,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 2,
+                                "y": 2,
+                                "z": 0,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -163,44 +216,48 @@
             },
             "left": {
                 "head": {
-                    "x": 8,
-                    "y": 7,
-                    "z": -4.094858496617509,
+                    "x": 1,
+                    "y": 2,
+                    "z": -3,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 8,
-                        "y": 6,
-                        "z": -3.0916177870445183,
+                        "x": 2,
+                        "y": 5,
+                        "z": -21,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 9,
-                            "y": 9,
-                            "z": -3.573352891874002,
+                            "x": 4,
+                            "y": 5,
+                            "z": -9,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 9,
-                                "y": 6,
-                                "z": -4.830453758186336,
+                                "x": 3,
+                                "y": 5,
+                                "z": -16,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -208,24 +265,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 8,
-                            "y": 5,
-                            "z": -2.716791640305815,
+                            "x": 3,
+                            "y": 4,
+                            "z": -7,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 9,
-                                "y": 5,
-                                "z": -3.5453234234762627,
+                                "x": 2,
+                                "y": 3,
+                                "z": -5,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 2,
+                                "y": 4,
+                                "z": -12,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -234,34 +306,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 5,
-                        "y": 9,
-                        "z": -4.058309636932589,
+                        "x": 0,
+                        "y": 4,
+                        "z": -16,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 7,
-                            "y": 9,
-                            "z": -3.2577892589122595,
+                            "x": 1,
+                            "y": 5,
+                            "z": -24,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 6,
-                                "y": 9,
-                                "z": -3.7851957375706253,
+                                "x": 1,
+                                "y": 4,
+                                "z": -15,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 0,
+                                "y": 5,
+                                "z": -25,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -269,36 +357,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 6,
-                            "y": 7,
-                            "z": -3.7556059859217337,
+                            "x": 1,
+                            "y": 3,
+                            "z": -8,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": {
                             "head": {
-                                "x": 6,
-                                "y": 8,
-                                "z": -2.958342922855868,
+                                "x": 0,
+                                "y": 2,
+                                "z": -4,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
                         },
                         "left": {
                             "head": {
-                                "x": 5,
-                                "y": 7,
-                                "z": -4.128263318515727,
+                                "x": 0,
+                                "y": 3,
+                                "z": -9,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -309,54 +400,59 @@
         },
         "left": {
             "head": {
-                "x": 5,
-                "y": 3,
-                "z": -3.0322780322232417,
+                "x": 1,
+                "y": 0,
+                "z": 1,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
-                "adjacent_edges": []
+                "adjacent_edges": [],
+                "adjacent_in_order_indices": []
             },
             "right": {
                 "head": {
-                    "x": 7,
-                    "y": 1,
-                    "z": -2.1555366087378798,
+                    "x": 4,
+                    "y": -1,
+                    "z": 15,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 9,
-                        "y": 1,
-                        "z": -2.739625112711974,
+                        "x": 5,
+                        "y": -1,
+                        "z": 24,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 8,
-                            "y": 2,
-                            "z": -0.6216239330348855,
+                            "x": 5,
+                            "y": 0,
+                            "z": 25,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 8,
-                                "y": 4,
-                                "z": -1.6028044017116794,
+                                "x": 4,
+                                "y": 0,
+                                "z": 16,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -364,24 +460,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 8,
-                            "y": 1,
-                            "z": -2.6166061137979884,
+                            "x": 5,
+                            "y": -3,
+                            "z": 16,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 8,
-                                "y": 0,
-                                "z": -2.98554337023982,
+                                "x": 5,
+                                "y": -2,
+                                "z": 21,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 5,
+                                "y": -4,
+                                "z": 9,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -390,34 +501,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 6,
-                        "y": 2,
-                        "z": -0.936662280465041,
+                        "x": 2,
+                        "y": -1,
+                        "z": 3,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 6,
-                            "y": 3,
-                            "z": -1.8978057576662244,
+                            "x": 3,
+                            "y": -1,
+                            "z": 8,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 5,
-                                "y": 4,
-                                "z": -2.890736198121992,
+                                "x": 3,
+                                "y": 0,
+                                "z": 9,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 2,
+                                "y": 0,
+                                "z": 4,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -425,24 +552,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 6,
-                            "y": 0,
-                            "z": -1.6476442056244118,
+                            "x": 4,
+                            "y": -3,
+                            "z": 7,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 5,
-                                "y": 1,
-                                "z": -2.825957181438727,
+                                "x": 4,
+                                "y": -2,
+                                "z": 12,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 3,
+                                "y": -2,
+                                "z": 5,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -452,44 +594,61 @@
             },
             "left": {
                 "head": {
-                    "x": 7,
-                    "y": 2,
-                    "z": -3.521140973801411,
+                    "x": 2,
+                    "y": -3,
+                    "z": -5,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 8,
-                        "y": 3,
-                        "z": -3.9012924422571906,
+                        "x": 3,
+                        "y": -4,
+                        "z": -7,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 9,
-                            "y": 4,
-                            "z": -4.525709635174952,
+                            "x": 3,
+                            "y": -3,
+                            "z": 0,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 9,
-                                "y": 3,
-                                "z": -4.963676070682313,
+                                "x": 2,
+                                "y": -2,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 4,
+                                "y": -4,
+                                "z": 0,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -497,24 +656,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 9,
-                            "y": 0,
-                            "z": -4.620843882191773,
+                            "x": 4,
+                            "y": -5,
+                            "z": -9,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 9,
-                                "y": 2,
-                                "z": -4.967193965125913,
+                                "x": 5,
+                                "y": -5,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 3,
+                                "y": -5,
+                                "z": -16,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -523,34 +697,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 7,
-                        "y": 3,
-                        "z": -4.141830906489117,
+                        "x": 2,
+                        "y": -4,
+                        "z": -12,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 6,
-                            "y": 4,
-                            "z": -4.515276954292487,
+                            "x": 1,
+                            "y": -2,
+                            "z": -3,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 7,
-                                "y": 4,
-                                "z": -4.521014250425137,
+                                "x": 1,
+                                "y": -1,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": 1,
+                                "y": -3,
+                                "z": -8,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -558,36 +748,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 7,
-                            "y": 0,
-                            "z": -4.2694907922163985,
+                            "x": 2,
+                            "y": -5,
+                            "z": -21,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": {
                             "head": {
-                                "x": 5,
-                                "y": 2,
-                                "z": -3.795985031135145,
+                                "x": 1,
+                                "y": -4,
+                                "z": -15,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
                         },
                         "left": {
                             "head": {
-                                "x": 6,
-                                "y": 1,
-                                "z": -4.760377498630173,
+                                "x": 1,
+                                "y": -5,
+                                "z": -24,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -599,64 +792,70 @@
     },
     "left": {
         "head": {
-            "x": 0,
-            "y": 5,
-            "z": -1.110829226615246,
+            "x": -5,
+            "y": 0,
+            "z": 25,
             "visited": false,
             "created": false,
             "adjacent_vertices": [],
-            "adjacent_edges": []
+            "adjacent_edges": [],
+            "adjacent_in_order_indices": []
         },
         "right": {
             "head": {
-                "x": 4,
-                "y": 8,
-                "z": -2.655502889110286,
+                "x": -5,
+                "y": 5,
+                "z": 0,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
-                "adjacent_edges": []
+                "adjacent_edges": [],
+                "adjacent_in_order_indices": []
             },
             "right": {
                 "head": {
-                    "x": 2,
-                    "y": 6,
-                    "z": -0.6692230041361252,
+                    "x": -4,
+                    "y": 0,
+                    "z": 16,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 3,
-                        "y": 8,
-                        "z": -1.0778068825980984,
+                        "x": -3,
+                        "y": 1,
+                        "z": 8,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 4,
-                            "y": 9,
-                            "z": -0.960099270834463,
+                            "x": -3,
+                            "y": 2,
+                            "z": 5,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 3,
-                                "y": 9,
-                                "z": -1.1000457165294337,
+                                "x": -2,
+                                "y": 1,
+                                "z": 3,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -664,24 +863,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 3,
-                            "y": 5,
-                            "z": -1.404058963440068,
+                            "x": -2,
+                            "y": 0,
+                            "z": 4,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 3,
-                                "y": 7,
-                                "z": -1.8764531850393933,
+                                "x": -3,
+                                "y": 0,
+                                "z": 9,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -1,
+                                "y": 0,
+                                "z": 1,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -690,34 +904,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 0,
-                        "y": 8,
-                        "z": -1.2578899451063175,
+                        "x": -4,
+                        "y": 2,
+                        "z": 12,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 2,
-                            "y": 8,
-                            "z": -1.131154975370644,
+                            "x": -5,
+                            "y": 4,
+                            "z": 9,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 0,
-                                "y": 9,
-                                "z": -1.3405540521287702,
+                                "x": -5,
+                                "y": 3,
+                                "z": 16,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -4,
+                                "y": 3,
+                                "z": 7,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -725,24 +955,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 0,
-                            "y": 7,
-                            "z": -2.086698990812901,
+                            "x": -5,
+                            "y": 2,
+                            "z": 21,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 0,
-                                "y": 6,
-                                "z": -2.553443215263081,
+                                "x": -5,
+                                "y": 1,
+                                "z": 24,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -4,
+                                "y": 1,
+                                "z": 15,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -752,44 +997,48 @@
             },
             "left": {
                 "head": {
-                    "x": 2,
-                    "y": 7,
-                    "z": -4.289056298466886,
+                    "x": -2,
+                    "y": 3,
+                    "z": -5,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 4,
-                        "y": 6,
-                        "z": -3.2031759024566275,
+                        "x": -1,
+                        "y": 3,
+                        "z": -8,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 2,
-                            "y": 9,
-                            "z": -3.087575083742831,
+                            "x": -1,
+                            "y": 4,
+                            "z": -15,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
-                                "y": 7,
-                                "z": -4.777788227695555,
+                                "x": -1,
+                                "y": 5,
+                                "z": -24,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -797,24 +1046,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 4,
-                            "y": 5,
-                            "z": -4.461985929738354,
+                            "x": -1,
+                            "y": 1,
+                            "z": 0,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 3,
-                                "y": 6,
-                                "z": -4.886644865019364,
+                                "x": -2,
+                                "y": 2,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -1,
+                                "y": 2,
+                                "z": -3,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -823,34 +1087,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 1,
-                        "y": 7,
-                        "z": -3.687910614241279,
+                        "x": -2,
+                        "y": 4,
+                        "z": -12,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 1,
-                            "y": 8,
-                            "z": -2.69887476008885,
+                            "x": -3,
+                            "y": 5,
+                            "z": -16,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 1,
-                                "y": 9,
-                                "z": -3.5267902667828914,
+                                "x": -4,
+                                "y": 5,
+                                "z": -9,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -2,
+                                "y": 5,
+                                "z": -21,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -858,36 +1138,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 1,
-                            "y": 5,
-                            "z": -4.293369327215358,
+                            "x": -3,
+                            "y": 3,
+                            "z": 0,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": {
                             "head": {
-                                "x": 1,
-                                "y": 6,
-                                "z": -2.7388496852717275,
+                                "x": -4,
+                                "y": 4,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
                         },
                         "left": {
                             "head": {
-                                "x": 2,
-                                "y": 5,
-                                "z": -4.768950756488648,
+                                "x": -3,
+                                "y": 4,
+                                "z": -7,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -898,54 +1181,59 @@
         },
         "left": {
             "head": {
-                "x": 0,
-                "y": 3,
-                "z": -2.4673643470339064,
+                "x": -5,
+                "y": -5,
+                "z": 0,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
-                "adjacent_edges": []
+                "adjacent_edges": [],
+                "adjacent_in_order_indices": []
             },
             "right": {
                 "head": {
-                    "x": 2,
-                    "y": 2,
-                    "z": -0.3771427855031517,
+                    "x": -4,
+                    "y": -1,
+                    "z": 15,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 4,
-                        "y": 2,
-                        "z": -0.5927655576565211,
+                        "x": -3,
+                        "y": -1,
+                        "z": 8,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 4,
-                            "y": 4,
-                            "z": -0.8858635882545585,
+                            "x": -2,
+                            "y": -1,
+                            "z": 3,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 3,
-                                "y": 4,
-                                "z": -1.4256308455878508,
+                                "x": -1,
+                                "y": -1,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -953,24 +1241,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 3,
-                            "y": 2,
-                            "z": -0.9416944869179661,
+                            "x": -2,
+                            "y": -2,
+                            "z": 0,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 3,
-                                "y": 0,
-                                "z": -1.9412352155579238,
+                                "x": -3,
+                                "y": -2,
+                                "z": 5,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -3,
+                                "y": -3,
+                                "z": 0,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -979,34 +1282,50 @@
                 },
                 "left": {
                     "head": {
-                        "x": 2,
-                        "y": 1,
-                        "z": -0.4261062680959632,
+                        "x": -4,
+                        "y": -3,
+                        "z": 7,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 1,
-                            "y": 4,
-                            "z": -1.5064118213663709,
+                            "x": -5,
+                            "y": -2,
+                            "z": 21,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 1,
-                                "y": 2,
-                                "z": -1.5991716171225312,
+                                "x": -5,
+                                "y": -1,
+                                "z": 24,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -4,
+                                "y": -2,
+                                "z": 12,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -1014,36 +1333,39 @@
                     },
                     "left": {
                         "head": {
-                            "x": 1,
-                            "y": 1,
-                            "z": -1.2217629852952943,
+                            "x": -5,
+                            "y": -4,
+                            "z": 9,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": {
                             "head": {
-                                "x": 1,
-                                "y": 0,
-                                "z": -0.8812810409460969,
+                                "x": -5,
+                                "y": -3,
+                                "z": 16,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
                         },
                         "left": {
                             "head": {
-                                "x": 0,
-                                "y": 1,
-                                "z": -1.988515477523748,
+                                "x": -4,
+                                "y": -4,
+                                "z": 0,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -1053,105 +1375,61 @@
             },
             "left": {
                 "head": {
-                    "x": 2,
-                    "y": 4,
-                    "z": -2.5474435228105383,
+                    "x": -1,
+                    "y": -4,
+                    "z": -15,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
-                    "adjacent_edges": []
+                    "adjacent_edges": [],
+                    "adjacent_in_order_indices": []
                 },
                 "right": {
                     "head": {
-                        "x": 4,
-                        "y": 1,
-                        "z": -3.600924919273973,
+                        "x": 0,
+                        "y": -3,
+                        "z": -9,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
-                        "adjacent_edges": []
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
                     },
                     "right": {
                         "head": {
-                            "x": 4,
-                            "y": 3,
-                            "z": -2.744156481314546,
+                            "x": -1,
+                            "y": -2,
+                            "z": -3,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
-                        "right": null,
-                        "left": {
+                        "right": {
                             "head": {
-                                "x": 3,
-                                "y": 3,
-                                "z": -4.120735878280438,
+                                "x": 0,
+                                "y": -1,
+                                "z": -1,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
-                        }
-                    },
-                    "left": {
-                        "head": {
-                            "x": 3,
-                            "y": 1,
-                            "z": -4.2101924414143985,
-                            "visited": false,
-                            "created": false,
-                            "adjacent_vertices": [],
-                            "adjacent_edges": []
                         },
-                        "right": null,
-                        "left": {
-                            "head": {
-                                "x": 4,
-                                "y": 0,
-                                "z": -4.749358470867019,
-                                "visited": false,
-                                "created": false,
-                                "adjacent_vertices": [],
-                                "adjacent_edges": []
-                            },
-                            "right": null,
-                            "left": null
-                        }
-                    }
-                },
-                "left": {
-                    "head": {
-                        "x": 1,
-                        "y": 3,
-                        "z": -3.672468456896221,
-                        "visited": false,
-                        "created": false,
-                        "adjacent_vertices": [],
-                        "adjacent_edges": []
-                    },
-                    "right": {
-                        "head": {
-                            "x": 2,
-                            "y": 3,
-                            "z": -3.830891675905046,
-                            "visited": false,
-                            "created": false,
-                            "adjacent_vertices": [],
-                            "adjacent_edges": []
-                        },
-                        "right": null,
                         "left": {
                             "head": {
                                 "x": 0,
-                                "y": 4,
-                                "z": -4.344090838351428,
+                                "y": -2,
+                                "z": -4,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
@@ -1160,35 +1438,130 @@
                     "left": {
                         "head": {
                             "x": 0,
-                            "y": 0,
-                            "z": -4.215738767186504,
+                            "y": -4,
+                            "z": -16,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
-                            "adjacent_edges": []
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
                         },
                         "right": {
                             "head": {
-                                "x": 0,
-                                "y": 2,
-                                "z": -2.658097073311836,
+                                "x": -1,
+                                "y": -3,
+                                "z": -8,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null
                         },
                         "left": {
                             "head": {
-                                "x": 2,
-                                "y": 0,
-                                "z": -4.986845010056943,
+                                "x": 0,
+                                "y": -5,
+                                "z": -25,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
-                                "adjacent_edges": []
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        }
+                    }
+                },
+                "left": {
+                    "head": {
+                        "x": -1,
+                        "y": -5,
+                        "z": -24,
+                        "visited": false,
+                        "created": false,
+                        "adjacent_vertices": [],
+                        "adjacent_edges": [],
+                        "adjacent_in_order_indices": []
+                    },
+                    "right": {
+                        "head": {
+                            "x": -3,
+                            "y": -4,
+                            "z": -7,
+                            "visited": false,
+                            "created": false,
+                            "adjacent_vertices": [],
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
+                        },
+                        "right": {
+                            "head": {
+                                "x": -2,
+                                "y": -3,
+                                "z": -5,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -2,
+                                "y": -4,
+                                "z": -12,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        }
+                    },
+                    "left": {
+                        "head": {
+                            "x": -3,
+                            "y": -5,
+                            "z": -16,
+                            "visited": false,
+                            "created": false,
+                            "adjacent_vertices": [],
+                            "adjacent_edges": [],
+                            "adjacent_in_order_indices": []
+                        },
+                        "right": {
+                            "head": {
+                                "x": -4,
+                                "y": -5,
+                                "z": -9,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
+                            },
+                            "right": null,
+                            "left": null
+                        },
+                        "left": {
+                            "head": {
+                                "x": -2,
+                                "y": -5,
+                                "z": -21,
+                                "visited": false,
+                                "created": false,
+                                "adjacent_vertices": [],
+                                "adjacent_edges": [],
+                                "adjacent_in_order_indices": []
                             },
                             "right": null,
                             "left": null

@@ -24,7 +24,7 @@ def print_order(order: int, network):
 
 width = 5
 height = 5
-abs_coefficient = 2
+abs_coefficient = 1
 
 verts = []
 
@@ -39,15 +39,15 @@ for x in range(-width, width+1):
 node_network = VertexGraph.from_list(verts)
 
 print("Adjacent coordinates:")
-for i in range(width):
-    for j in range(height):
+for i in range(-width, width+1):
+    for j in range(-height, height+1):
         adjs = node_network.range_search(x_range=(i-1, i+1), y_range=(j-1, j+1))
         adjs_co = [g.get_coordinates() for g in adjs]
         print("vertex ({}, {}, z). Within 1 meter x, y: {}".format(i, j, [(a[0], a[1]) for a in adjs_co]))
 
 
 print("\nEstablishing x_y proximity within 1 meter")
-node_network.establish_proximity_xy(1)
+node_network.establish_euclidean_proximity_xy(1)
 for vertex in node_network.get_vertices():
     network_adj = node_network.get_adjacent_within(vertex, 1, 1)
     vertex_adj = [v[0] for v in vertex.get_adjacent()]
@@ -68,3 +68,17 @@ print(new_graph)
 with open("jsons/test_data.json", "w+") as f:
     f.write(graph_json)
     f.close()
+
+vertices, edges, faces = node_network.get_blender_data()
+
+print("\nVertices:")
+for v in vertices:
+    print(v)
+
+print("\nEdges:")
+for e in edges:
+    print(e)
+
+print("\nFaces:")
+for f in faces:
+    print(f)

@@ -256,6 +256,41 @@ class VertexGraph:
 
         return points
 
+    def get_xy_euclidean_adjacent(self, vert, distance):
+        prox = self.get_adjacent_within(vert, distance, distance)
+
+        for p in prox:
+            euclidean_distance = ((vert.get_x() - p.get_x())**2 + (vert.get_y() - p.get_y())**2) ** 0.5
+
+            if euclidean_distance > distance:
+                prox.remove(p)
+
+        return prox
+
+    def get_blender_vertices(self):
+        return self.get_in_order_coordinates()
+
+    def get_blender_edges(self):
+        out = []
+        verts = self.get_vertices()
+
+        for i in range(len(verts)):
+            edges = [(i, x[2]) for x in verts[i].get_adjacent()]
+
+            for edge in edges:
+                edge = tuple(sorted(edge))
+
+                if edge not in out:
+                    out.append(edge)
+
+        return out
+
+    def get_blender_faces(self):
+        return []
+
+    def get_blender_data(self):
+        return self.get_blender_vertices(), self.get_blender_edges(), self.get_blender_faces()
+
     def establish_proximity_xy(self, distance):
         verts = self.get_vertices()
 
@@ -263,7 +298,18 @@ class VertexGraph:
             prox = self.get_adjacent_within(v, distance, distance)
 
             for p in prox:
-                v.add_vertex(p)
+                p_idx = verts.index(p)
+                v.add_vertex(p, p_idx)
+
+    def establish_euclidean_proximity_xy(self, distance):
+        verts = self.get_vertices()
+
+        for v in verts:
+            prox = self.get_xy_euclidean_adjacent(v, distance)
+
+            for p in prox:
+                p_idx = verts.index(p)
+                v.add_vertex(p, p_idx)
 
     def to_dict(self) -> dict:
         if self.left is None and self.right is None:
