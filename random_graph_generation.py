@@ -24,7 +24,7 @@ def print_order(order: int, network):
 
 width = 10
 height = 10
-max_depth = -30
+max_depth = -5
 
 verts = []
 

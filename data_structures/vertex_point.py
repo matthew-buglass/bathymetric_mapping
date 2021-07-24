@@ -32,9 +32,16 @@ class VertexPoint:
     def set_visited(self):
         self.visited = True
 
+    def set_created(self):
+        self.created = True
+
     def add_vertex(self, vert):
         self.adjacent_vertices.append(vert)
         self.adjacent_edges.append(False)
+
+    def set_connected(self, vert):
+        idx = self.adjacent_vertices.index(vert)
+        self.adjacent_edges[idx] = True
 
     def remove_vertex(self, vert):
         """
