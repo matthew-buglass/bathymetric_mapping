@@ -33,3 +33,5 @@ for vert in verts:
 
 bpy.ops.mesh.select_all(action='SELECT')
 bpy.ops.mesh.edge_face_add()
+bpy.ops.object.editmode_toggle()
+bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY', center='MEDIAN')

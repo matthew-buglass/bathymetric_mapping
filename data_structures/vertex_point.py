@@ -2,11 +2,12 @@ import json
 
 
 class VertexPoint:
-    def __init__(self, x=0.0, y=0.0, z=0.0, visited=False, adjacent_vertices=None, adjacent_edges=None):
+    def __init__(self, x=0.0, y=0.0, z=0.0, visited=False, created=False, adjacent_vertices=None, adjacent_edges=None):
         self.x: float = x
         self.y: float = y
         self.z: float = z
         self.visited: bool = visited
+        self.created: bool = created
         if adjacent_vertices is None:
             self.adjacent_vertices: list[VertexPoint] = []
             self.adjacent_edges: list[bool] = []
