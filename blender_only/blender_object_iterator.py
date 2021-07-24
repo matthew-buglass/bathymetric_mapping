@@ -1,4 +1,4 @@
-# import bpy
+import bpy
 import json
 import importlib.util
 import os
@@ -26,3 +26,10 @@ for vert in verts:
     z = vert.get_z()
     
     print(x, y, z)
+    
+    bpy.ops.mesh.primitive_vert_add()
+    bpy.ops.transform.translate(value=(x, y, z), orient_type='GLOBAL')
+
+
+bpy.ops.mesh.select_all(action='SELECT')
+bpy.ops.mesh.edge_face_add()
