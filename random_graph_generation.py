@@ -22,8 +22,8 @@ def print_order(order: int, network):
     print("Percent adjacent: {:.5f}%".format(order_adjacent.count(True) / len(order_adjacent) * 100))
 
 
-width = 10
-height = 10
+width = 2
+height = 3
 max_depth = -30
 
 verts = []
@@ -54,3 +54,9 @@ for vertex in node_network.get_vertices():
     print("vertex {} personal and graph adjacents identical: {}".format(vertex.get_coordinates(),
                                                                         collections.Counter(network_adj) == collections.Counter(vertex_adj)))
 
+print("\nVertex to pretty json:")
+for vertex in node_network.get_vertices():
+    print(vertex.to_pretty_json())
+
+print("\nGraph to pretty json:")
+print(node_network.to_pretty_json())

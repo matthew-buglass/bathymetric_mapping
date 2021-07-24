@@ -1,3 +1,5 @@
+import json
+
 from data_structures.vertex_point import VertexPoint
 
 
@@ -250,3 +252,67 @@ class VertexGraph:
 
             for p in prox:
                 v.add_vertex(p)
+
+    def to_dict(self) -> dict:
+        if self.left is None and self.right is None:
+            old_head = self.get_head()
+            self.head = self.get_head().to_dict()
+            out = self.__dict__.copy()
+            self.head = old_head
+            return out
+        elif self.left is not None:
+            old_head = self.get_head()
+            old_left = self.get_left()
+
+            left_dict = self.left.to_dict()
+
+            self.head = self.get_head().to_dict()
+            self.left = left_dict
+
+            out = self.__dict__.copy()
+
+            self.head = old_head
+            self.left = old_left
+
+            return out
+        elif self.right is not None:
+            old_head = self.get_head()
+            old_right = self.get_right()
+
+            right_dict = self.right.to_dict()
+
+            self.head = self.get_head().to_dict()
+            self.right = right_dict
+
+            out = self.__dict__.copy()
+
+            self.head = old_head
+            self.right = old_right
+
+            return out
+        else:
+            old_head = self.get_head()
+            old_left = self.get_left()
+            old_right = self.get_right()
+
+            left_dict = self.left.to_dict()
+            right_dict = self.right.to_dict()
+
+            self.head = self.get_head().to_dict()
+            self.left = left_dict
+            self.right = right_dict
+
+            out = self.__dict__.copy()
+
+            self.head = old_head
+            self.left = old_left
+            self.right = old_right
+
+            return out
+
+    def to_pretty_json(self) -> json:
+        self_dict = self.to_dict()
+
+        json_out = json.dumps(self_dict, indent=4)
+
+        return json_out

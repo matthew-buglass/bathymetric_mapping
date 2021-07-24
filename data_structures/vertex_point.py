@@ -1,11 +1,14 @@
+import json
+
+
 class VertexPoint:
-    def __init__(self):
-        self.x: float = 0.0
-        self.y: float = 0.0
-        self.z: float = 0.0
-        self.visited: bool = False
-        self.adjacent_vertices: list[VertexPoint] = []
-        self.adjacent_edges: list[bool] = []
+    def __init__(self, x=0.0, y=0.0, z=0.0, visited=False, adjacent_vertices=[], adjacent_edges=[]):
+        self.x: float = x
+        self.y: float = y
+        self.z: float = z
+        self.visited: bool = visited
+        self.adjacent_vertices: list[VertexPoint] = adjacent_vertices
+        self.adjacent_edges: list[bool] = adjacent_edges
 
     def set_x(self, x: float):
         self.x = x
@@ -71,3 +74,43 @@ class VertexPoint:
 
     def get_adjacent(self):
         return [(self.adjacent_vertices[x], self.adjacent_edges[x]) for x in range(len(self.adjacent_vertices))]
+
+    def to_dict(self) -> dict:
+        temp_adj_vert = self.adjacent_vertices
+        temp_adj_edge = self.adjacent_edges
+
+        self.adjacent_vertices = []
+        self.adjacent_edges = []
+
+        out = self.__dict__.copy()
+
+        self.adjacent_vertices = temp_adj_vert
+        self.adjacent_edges = temp_adj_edge
+
+        return out
+
+    def to_json(self) -> json:
+        temp_adj_vert = self.adjacent_vertices
+        temp_adj_edge = self.adjacent_edges
+
+        self.adjacent_vertices = []
+        self.adjacent_edges = []
+
+        json_out = json.dumps(self)
+
+        self.adjacent_vertices = temp_adj_vert
+        self.adjacent_edges = temp_adj_edge
+
+        return json_out
+
+    def to_pretty_json(self) -> json:
+        self_dict = self.to_dict()
+
+        json_out = json.dumps(self_dict, indent=4)
+
+        return json_out
+
+    @classmethod
+    def from_json(cls, j):
+        return VertexPoint(**json.loads(j))
+
