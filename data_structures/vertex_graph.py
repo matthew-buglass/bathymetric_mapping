@@ -4,10 +4,20 @@ from data_structures.vertex_point import VertexPoint
 
 
 class VertexGraph:
-    def __init__(self):
-        self.head: VertexPoint = None
-        self.right: VertexGraph = None
-        self.left: VertexGraph = None
+    def __init__(self, head=None, right=None, left=None):
+        self.head: VertexPoint = head
+        self.right: VertexGraph = right
+        self.left: VertexGraph = left
+
+        if self.head is not None:
+            self.head = VertexPoint.from_json(json.dumps(head))
+
+            if left is not None:
+                self.left = VertexGraph.from_json(json.dumps(left))
+
+            if right is not None:
+                self.right = VertexGraph.from_json(json.dumps(right))
+
 
     @classmethod
     def from_list(cls, l: list[VertexPoint]):
@@ -316,3 +326,7 @@ class VertexGraph:
         json_out = json.dumps(self_dict, indent=4)
 
         return json_out
+
+    @classmethod
+    def from_json(cls, j):
+        return VertexGraph(**json.loads(j))

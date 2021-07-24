@@ -59,4 +59,7 @@ for vertex in node_network.get_vertices():
     print(vertex.to_pretty_json())
 
 print("\nGraph to pretty json:")
-print(node_network.to_pretty_json())
+graph_json = node_network.to_pretty_json()
+print(graph_json)
+new_graph = VertexGraph.from_json(graph_json)
+print(new_graph)
