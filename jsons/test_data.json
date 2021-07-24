@@ -2,7 +2,7 @@
     "head": {
         "x": 5,
         "y": 0,
-        "z": -25.580402824885702,
+        "z": -3.2336458588262387,
         "visited": false,
         "created": false,
         "adjacent_vertices": [],
@@ -12,7 +12,7 @@
         "head": {
             "x": 5,
             "y": 5,
-            "z": -25.14952476582962,
+            "z": -0.7898038275538621,
             "visited": false,
             "created": false,
             "adjacent_vertices": [],
@@ -20,9 +20,9 @@
         },
         "right": {
             "head": {
-                "x": 7,
-                "y": 6,
-                "z": -18.58055852513428,
+                "x": 9,
+                "y": 8,
+                "z": -2.293254871770027,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
@@ -31,8 +31,8 @@
             "right": {
                 "head": {
                     "x": 7,
-                    "y": 9,
-                    "z": -13.769983380654985,
+                    "y": 6,
+                    "z": -1.244223025411391,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -40,9 +40,9 @@
                 },
                 "right": {
                     "head": {
-                        "x": 9,
-                        "y": 7,
-                        "z": -5.244733176716484,
+                        "x": 7,
+                        "y": 8,
+                        "z": -0.925627561617583,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -52,7 +52,7 @@
                         "head": {
                             "x": 8,
                             "y": 8,
-                            "z": -2.7226059398904736,
+                            "z": -1.9058281855634096,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -63,7 +63,7 @@
                             "head": {
                                 "x": 8,
                                 "y": 9,
-                                "z": -3.297319280154288,
+                                "z": -2.116024475402225,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -75,9 +75,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 8,
-                            "y": 5,
-                            "z": -1.103679250008398,
+                            "x": 7,
+                            "y": 7,
+                            "z": -0.8158945227043424,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -87,8 +87,8 @@
                         "left": {
                             "head": {
                                 "x": 9,
-                                "y": 6,
-                                "z": -17.49919759127035,
+                                "y": 7,
+                                "z": -1.115754621282845,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -102,8 +102,8 @@
                 "left": {
                     "head": {
                         "x": 5,
-                        "y": 7,
-                        "z": -1.1385888774182862,
+                        "y": 6,
+                        "z": -2.144708950434617,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -111,9 +111,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 5,
-                            "y": 9,
-                            "z": -9.446230294714228,
+                            "x": 6,
+                            "y": 6,
+                            "z": -0.9138679262428312,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -124,7 +124,7 @@
                             "head": {
                                 "x": 5,
                                 "y": 8,
-                                "z": -12.412123399763466,
+                                "z": -1.4552129094850863,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -136,9 +136,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 5,
-                            "y": 6,
-                            "z": -12.917351831928164,
+                            "x": 6,
+                            "y": 5,
+                            "z": -0.1381021301678087,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -149,7 +149,7 @@
                             "head": {
                                 "x": 7,
                                 "y": 5,
-                                "z": -17.420605682871965,
+                                "z": -2.1079608232394853,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -163,9 +163,9 @@
             },
             "left": {
                 "head": {
-                    "x": 7,
-                    "y": 8,
-                    "z": -27.489093117175496,
+                    "x": 8,
+                    "y": 7,
+                    "z": -4.094858496617509,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -174,8 +174,8 @@
                 "right": {
                     "head": {
                         "x": 8,
-                        "y": 7,
-                        "z": -29.864385634899424,
+                        "y": 6,
+                        "z": -3.0916177870445183,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -185,7 +185,7 @@
                         "head": {
                             "x": 9,
                             "y": 9,
-                            "z": -18.793991576662766,
+                            "z": -3.573352891874002,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -195,8 +195,8 @@
                         "left": {
                             "head": {
                                 "x": 9,
-                                "y": 8,
-                                "z": -20.564027822740965,
+                                "y": 6,
+                                "z": -4.830453758186336,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -209,8 +209,8 @@
                     "left": {
                         "head": {
                             "x": 8,
-                            "y": 6,
-                            "z": -20.827544135394565,
+                            "y": 5,
+                            "z": -2.716791640305815,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -221,7 +221,7 @@
                             "head": {
                                 "x": 9,
                                 "y": 5,
-                                "z": -23.47568882685392,
+                                "z": -3.5453234234762627,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -234,9 +234,9 @@
                 },
                 "left": {
                     "head": {
-                        "x": 7,
-                        "y": 7,
-                        "z": -28.357838626504197,
+                        "x": 5,
+                        "y": 9,
+                        "z": -4.058309636932589,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -244,9 +244,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 6,
-                            "y": 8,
-                            "z": -21.696809213684006,
+                            "x": 7,
+                            "y": 9,
+                            "z": -3.2577892589122595,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -257,7 +257,7 @@
                             "head": {
                                 "x": 6,
                                 "y": 9,
-                                "z": -25.768258584126166,
+                                "z": -3.7851957375706253,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -271,7 +271,7 @@
                         "head": {
                             "x": 6,
                             "y": 7,
-                            "z": -27.90638743513948,
+                            "z": -3.7556059859217337,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -280,8 +280,8 @@
                         "right": {
                             "head": {
                                 "x": 6,
-                                "y": 6,
-                                "z": -23.112399472760085,
+                                "y": 8,
+                                "z": -2.958342922855868,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -292,9 +292,9 @@
                         },
                         "left": {
                             "head": {
-                                "x": 6,
-                                "y": 5,
-                                "z": -28.00574634802027,
+                                "x": 5,
+                                "y": 7,
+                                "z": -4.128263318515727,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -309,9 +309,9 @@
         },
         "left": {
             "head": {
-                "x": 7,
+                "x": 5,
                 "y": 3,
-                "z": -17.151882898494424,
+                "z": -3.0322780322232417,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
@@ -320,8 +320,8 @@
             "right": {
                 "head": {
                     "x": 7,
-                    "y": 0,
-                    "z": -5.6358907161765615,
+                    "y": 1,
+                    "z": -2.1555366087378798,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -331,7 +331,7 @@
                     "head": {
                         "x": 9,
                         "y": 1,
-                        "z": -1.416766590655082,
+                        "z": -2.739625112711974,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -341,7 +341,7 @@
                         "head": {
                             "x": 8,
                             "y": 2,
-                            "z": -8.827798741191595,
+                            "z": -0.6216239330348855,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -350,9 +350,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 9,
-                                "y": 3,
-                                "z": -9.474049764054163,
+                                "x": 8,
+                                "y": 4,
+                                "z": -1.6028044017116794,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -364,9 +364,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 9,
-                            "y": 0,
-                            "z": -1.4953917786483084,
+                            "x": 8,
+                            "y": 1,
+                            "z": -2.6166061137979884,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -377,7 +377,7 @@
                             "head": {
                                 "x": 8,
                                 "y": 0,
-                                "z": -12.605403513307435,
+                                "z": -2.98554337023982,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -390,9 +390,9 @@
                 },
                 "left": {
                     "head": {
-                        "x": 5,
-                        "y": 3,
-                        "z": -7.052472464745879,
+                        "x": 6,
+                        "y": 2,
+                        "z": -0.936662280465041,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -400,9 +400,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 5,
-                            "y": 4,
-                            "z": -6.94910017331583,
+                            "x": 6,
+                            "y": 3,
+                            "z": -1.8978057576662244,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -411,9 +411,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 7,
+                                "x": 5,
                                 "y": 4,
-                                "z": -9.428216536742388,
+                                "z": -2.890736198121992,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -426,8 +426,8 @@
                     "left": {
                         "head": {
                             "x": 6,
-                            "y": 1,
-                            "z": -1.414632192583144,
+                            "y": 0,
+                            "z": -1.6476442056244118,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -436,9 +436,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 6,
-                                "y": 2,
-                                "z": -4.520131576177276,
+                                "x": 5,
+                                "y": 1,
+                                "z": -2.825957181438727,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -453,8 +453,8 @@
             "left": {
                 "head": {
                     "x": 7,
-                    "y": 1,
-                    "z": -20.09287381075091,
+                    "y": 2,
+                    "z": -3.521140973801411,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -464,7 +464,7 @@
                     "head": {
                         "x": 8,
                         "y": 3,
-                        "z": -20.535546946982894,
+                        "z": -3.9012924422571906,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -472,9 +472,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 8,
+                            "x": 9,
                             "y": 4,
-                            "z": -21.097446921846014,
+                            "z": -4.525709635174952,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -484,8 +484,8 @@
                         "left": {
                             "head": {
                                 "x": 9,
-                                "y": 4,
-                                "z": -22.50376903173293,
+                                "y": 3,
+                                "z": -4.963676070682313,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -497,9 +497,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 8,
-                            "y": 1,
-                            "z": -18.011904049858813,
+                            "x": 9,
+                            "y": 0,
+                            "z": -4.620843882191773,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -510,7 +510,7 @@
                             "head": {
                                 "x": 9,
                                 "y": 2,
-                                "z": -22.61467112393939,
+                                "z": -4.967193965125913,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -524,8 +524,8 @@
                 "left": {
                     "head": {
                         "x": 7,
-                        "y": 2,
-                        "z": -20.684619370677318,
+                        "y": 3,
+                        "z": -4.141830906489117,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -534,8 +534,8 @@
                     "right": {
                         "head": {
                             "x": 6,
-                            "y": 3,
-                            "z": -28.33543661757084,
+                            "y": 4,
+                            "z": -4.515276954292487,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -544,9 +544,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 6,
+                                "x": 7,
                                 "y": 4,
-                                "z": -28.534790650423606,
+                                "z": -4.521014250425137,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -558,9 +558,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 5,
-                            "y": 2,
-                            "z": -21.90037238264692,
+                            "x": 7,
+                            "y": 0,
+                            "z": -4.2694907922163985,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -568,9 +568,9 @@
                         },
                         "right": {
                             "head": {
-                                "x": 6,
-                                "y": 0,
-                                "z": -17.87416472560263,
+                                "x": 5,
+                                "y": 2,
+                                "z": -3.795985031135145,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -581,9 +581,9 @@
                         },
                         "left": {
                             "head": {
-                                "x": 5,
+                                "x": 6,
                                 "y": 1,
-                                "z": -26.305401857469892,
+                                "z": -4.760377498630173,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -601,7 +601,7 @@
         "head": {
             "x": 0,
             "y": 5,
-            "z": -7.829633220027127,
+            "z": -1.110829226615246,
             "visited": false,
             "created": false,
             "adjacent_vertices": [],
@@ -609,9 +609,9 @@
         },
         "right": {
             "head": {
-                "x": 1,
+                "x": 4,
                 "y": 8,
-                "z": -13.301359784673558,
+                "z": -2.655502889110286,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
@@ -619,9 +619,9 @@
             },
             "right": {
                 "head": {
-                    "x": 3,
+                    "x": 2,
                     "y": 6,
-                    "z": -7.17113920040365,
+                    "z": -0.6692230041361252,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -629,9 +629,9 @@
                 },
                 "right": {
                     "head": {
-                        "x": 4,
-                        "y": 7,
-                        "z": -5.930034350561588,
+                        "x": 3,
+                        "y": 8,
+                        "z": -1.0778068825980984,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -639,9 +639,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 3,
+                            "x": 4,
                             "y": 9,
-                            "z": -6.86018411885064,
+                            "z": -0.960099270834463,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -650,9 +650,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
+                                "x": 3,
                                 "y": 9,
-                                "z": -9.068859865578657,
+                                "z": -1.1000457165294337,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -665,8 +665,8 @@
                     "left": {
                         "head": {
                             "x": 3,
-                            "y": 7,
-                            "z": -2.4357233896401507,
+                            "y": 5,
+                            "z": -1.404058963440068,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -675,9 +675,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
-                                "y": 5,
-                                "z": -4.6664551297212595,
+                                "x": 3,
+                                "y": 7,
+                                "z": -1.8764531850393933,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -692,7 +692,7 @@
                     "head": {
                         "x": 0,
                         "y": 8,
-                        "z": -11.001059989983599,
+                        "z": -1.2578899451063175,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -702,7 +702,7 @@
                         "head": {
                             "x": 2,
                             "y": 8,
-                            "z": -1.9126483873668698,
+                            "z": -1.131154975370644,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -711,9 +711,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 1,
+                                "x": 0,
                                 "y": 9,
-                                "z": -6.424067305050062,
+                                "z": -1.3405540521287702,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -727,7 +727,7 @@
                         "head": {
                             "x": 0,
                             "y": 7,
-                            "z": -9.922275438497696,
+                            "z": -2.086698990812901,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -738,7 +738,7 @@
                             "head": {
                                 "x": 0,
                                 "y": 6,
-                                "z": -10.810078368953912,
+                                "z": -2.553443215263081,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -754,7 +754,7 @@
                 "head": {
                     "x": 2,
                     "y": 7,
-                    "z": -17.71331373649448,
+                    "z": -4.289056298466886,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -762,9 +762,9 @@
                 },
                 "right": {
                     "head": {
-                        "x": 3,
-                        "y": 8,
-                        "z": -14.226523199541614,
+                        "x": 4,
+                        "y": 6,
+                        "z": -3.2031759024566275,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -774,7 +774,7 @@
                         "head": {
                             "x": 2,
                             "y": 9,
-                            "z": -13.611954759013546,
+                            "z": -3.087575083742831,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -784,8 +784,8 @@
                         "left": {
                             "head": {
                                 "x": 4,
-                                "y": 8,
-                                "z": -28.603162748352137,
+                                "y": 7,
+                                "z": -4.777788227695555,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -797,9 +797,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 3,
+                            "x": 4,
                             "y": 5,
-                            "z": -14.510701658415813,
+                            "z": -4.461985929738354,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -808,9 +808,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
+                                "x": 3,
                                 "y": 6,
-                                "z": -28.835424150219605,
+                                "z": -4.886644865019364,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -823,9 +823,9 @@
                 },
                 "left": {
                     "head": {
-                        "x": 2,
-                        "y": 6,
-                        "z": -17.796945264679106,
+                        "x": 1,
+                        "y": 7,
+                        "z": -3.687910614241279,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -833,9 +833,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 0,
-                            "y": 9,
-                            "z": -17.034951773331077,
+                            "x": 1,
+                            "y": 8,
+                            "z": -2.69887476008885,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -845,8 +845,8 @@
                         "left": {
                             "head": {
                                 "x": 1,
-                                "y": 7,
-                                "z": -27.16937049945623,
+                                "y": 9,
+                                "z": -3.5267902667828914,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -860,7 +860,7 @@
                         "head": {
                             "x": 1,
                             "y": 5,
-                            "z": -20.48689536495762,
+                            "z": -4.293369327215358,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -870,7 +870,7 @@
                             "head": {
                                 "x": 1,
                                 "y": 6,
-                                "z": -20.07019116213205,
+                                "z": -2.7388496852717275,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -883,7 +883,7 @@
                             "head": {
                                 "x": 2,
                                 "y": 5,
-                                "z": -26.162127576202124,
+                                "z": -4.768950756488648,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -898,9 +898,9 @@
         },
         "left": {
             "head": {
-                "x": 2,
-                "y": 4,
-                "z": -11.07120950678919,
+                "x": 0,
+                "y": 3,
+                "z": -2.4673643470339064,
                 "visited": false,
                 "created": false,
                 "adjacent_vertices": [],
@@ -908,9 +908,9 @@
             },
             "right": {
                 "head": {
-                    "x": 3,
-                    "y": 1,
-                    "z": -9.836740450755139,
+                    "x": 2,
+                    "y": 2,
+                    "z": -0.3771427855031517,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -918,9 +918,9 @@
                 },
                 "right": {
                     "head": {
-                        "x": 3,
+                        "x": 4,
                         "y": 2,
-                        "z": -9.307512093672111,
+                        "z": -0.5927655576565211,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -928,9 +928,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 3,
+                            "x": 4,
                             "y": 4,
-                            "z": -3.872695823837379,
+                            "z": -0.8858635882545585,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -939,9 +939,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
+                                "x": 3,
                                 "y": 4,
-                                "z": -4.935949758137496,
+                                "z": -1.4256308455878508,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -954,8 +954,8 @@
                     "left": {
                         "head": {
                             "x": 3,
-                            "y": 0,
-                            "z": -0.7071242247190002,
+                            "y": 2,
+                            "z": -0.9416944869179661,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -964,9 +964,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
+                                "x": 3,
                                 "y": 0,
-                                "z": -3.3586029060833944,
+                                "z": -1.9412352155579238,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -980,8 +980,8 @@
                 "left": {
                     "head": {
                         "x": 2,
-                        "y": 3,
-                        "z": -1.676749895881423,
+                        "y": 1,
+                        "z": -0.4261062680959632,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -989,9 +989,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 0,
+                            "x": 1,
                             "y": 4,
-                            "z": -4.806435190728054,
+                            "z": -1.5064118213663709,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -1000,9 +1000,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 3,
-                                "y": 3,
-                                "z": -10.056466911489313,
+                                "x": 1,
+                                "y": 2,
+                                "z": -1.5991716171225312,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1016,7 +1016,7 @@
                         "head": {
                             "x": 1,
                             "y": 1,
-                            "z": -6.530844303993989,
+                            "z": -1.2217629852952943,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -1024,9 +1024,9 @@
                         },
                         "right": {
                             "head": {
-                                "x": 0,
-                                "y": 1,
-                                "z": -4.079973749759453,
+                                "x": 1,
+                                "y": 0,
+                                "z": -0.8812810409460969,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1038,8 +1038,8 @@
                         "left": {
                             "head": {
                                 "x": 0,
-                                "y": 2,
-                                "z": -8.990418085346473,
+                                "y": 1,
+                                "z": -1.988515477523748,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1054,8 +1054,8 @@
             "left": {
                 "head": {
                     "x": 2,
-                    "y": 0,
-                    "z": -25.958033662532575,
+                    "y": 4,
+                    "z": -2.5474435228105383,
                     "visited": false,
                     "created": false,
                     "adjacent_vertices": [],
@@ -1063,9 +1063,9 @@
                 },
                 "right": {
                     "head": {
-                        "x": 2,
-                        "y": 2,
-                        "z": -23.028407164283067,
+                        "x": 4,
+                        "y": 1,
+                        "z": -3.600924919273973,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -1075,7 +1075,7 @@
                         "head": {
                             "x": 4,
                             "y": 3,
-                            "z": -13.10060739616908,
+                            "z": -2.744156481314546,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -1084,9 +1084,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 4,
-                                "y": 2,
-                                "z": -13.675855318976634,
+                                "x": 3,
+                                "y": 3,
+                                "z": -4.120735878280438,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1098,9 +1098,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 2,
+                            "x": 3,
                             "y": 1,
-                            "z": -17.743721174225698,
+                            "z": -4.2101924414143985,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -1110,8 +1110,8 @@
                         "left": {
                             "head": {
                                 "x": 4,
-                                "y": 1,
-                                "z": -22.89064427195035,
+                                "y": 0,
+                                "z": -4.749358470867019,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1124,9 +1124,9 @@
                 },
                 "left": {
                     "head": {
-                        "x": 0,
+                        "x": 1,
                         "y": 3,
-                        "z": -16.368183006386282,
+                        "z": -3.672468456896221,
                         "visited": false,
                         "created": false,
                         "adjacent_vertices": [],
@@ -1134,9 +1134,9 @@
                     },
                     "right": {
                         "head": {
-                            "x": 1,
+                            "x": 2,
                             "y": 3,
-                            "z": -12.90897852452782,
+                            "z": -3.830891675905046,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -1145,9 +1145,9 @@
                         "right": null,
                         "left": {
                             "head": {
-                                "x": 1,
+                                "x": 0,
                                 "y": 4,
-                                "z": -20.16784577095936,
+                                "z": -4.344090838351428,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1159,9 +1159,9 @@
                     },
                     "left": {
                         "head": {
-                            "x": 1,
-                            "y": 2,
-                            "z": -27.231999230526228,
+                            "x": 0,
+                            "y": 0,
+                            "z": -4.215738767186504,
                             "visited": false,
                             "created": false,
                             "adjacent_vertices": [],
@@ -1170,8 +1170,8 @@
                         "right": {
                             "head": {
                                 "x": 0,
-                                "y": 0,
-                                "z": -24.28115903520397,
+                                "y": 2,
+                                "z": -2.658097073311836,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],
@@ -1182,9 +1182,9 @@
                         },
                         "left": {
                             "head": {
-                                "x": 1,
+                                "x": 2,
                                 "y": 0,
-                                "z": -27.528396829211886,
+                                "z": -4.986845010056943,
                                 "visited": false,
                                 "created": false,
                                 "adjacent_vertices": [],

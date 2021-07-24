@@ -15,7 +15,7 @@ with open(file_name, "r") as f:
     data = json.load(f)
     f.close()
 
-print(data)
+#print(data)
 
 # remaking the graph and establishing the point proximity
 g = vg.VertexGraph.from_json(json.dumps(data))
@@ -30,10 +30,10 @@ for vert in verts:
     
     print(x, y, z)
     
-    blend_vert = bpy.ops.mesh.primitive_vert_add()
+    bpy.ops.mesh.primitive_vert_add()
     bpy.ops.transform.translate(value=(x, y, z), orient_type='GLOBAL')
     
-    data_vert_to_blend_vert_map[vert] = blend_vert
+#    data_vert_to_blend_vert_map[vert] = blend_vert
     vert.set_created()
 
 # deselecting all onf the verticies
@@ -43,14 +43,16 @@ bpy.ops.mesh.select_all(action='DESELECT')
 bpy.ops.object.mode_set(mode='OBJECT') 
 obj = bpy.context.active_object
 
+print(str(bpy.context.active_object.data.vertices.keys()) + "\n\n\n\n")
 for vert in verts:
+    print("vert visited pre: {}".format(vert.visited))
     if not vert.visited:
         adj_verts = vert.get_adjacent()
-        vert_indx = obj.data.vertices.index(data_vert_to_blend_vert_map[vert])
+        vert_indx = obj.data.vertices.values().index(data_vert_to_blend_vert_map[vert])
         
         for adj_v, adj_e in adj_verts:
             if not adj_e:    # if we don't have an edge
-                adj_idx = obj.data.vertices.index(data_vert_to_blend_vert_map[adj_v])
+                adj_idx = obj.data.vertices.values().index(data_vert_to_blend_vert_map[adj_v])
                 
                 obj.data.vertices[vert_idx].select=True
                 obj.data.vertices[adj_idx].select=True
@@ -68,6 +70,7 @@ for vert in verts:
                 adj_v.set_connected(vert)
         
         vert.set_visited
+        print("vert visited post: {}\n".format(vert.visited))
  
 bpy.ops.object.mode_set(mode='EDIT') 
 bpy.ops.mesh.select_mode(type="VERT")
