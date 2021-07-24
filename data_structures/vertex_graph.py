@@ -193,7 +193,7 @@ class VertexGraph:
         """
         def range_search_helper(obj: VertexGraph, depth: int, x_range: (float, float)=None,
                                 y_range: (float, float)=None,
-                                z_range: (float, float)=None) -> list[vp.VertexPoint]:
+                                z_range: (float, float)=None):
             if obj is None:  # base case if not an actual object
                 return []
             else:  # recursive case
