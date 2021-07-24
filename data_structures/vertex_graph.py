@@ -258,12 +258,16 @@ class VertexGraph:
 
     def get_xy_euclidean_adjacent(self, vert, distance):
         prox = self.get_adjacent_within(vert, distance, distance)
+        duds = []
 
         for p in prox:
             euclidean_distance = ((vert.get_x() - p.get_x())**2 + (vert.get_y() - p.get_y())**2) ** 0.5
 
             if euclidean_distance > distance:
-                prox.remove(p)
+                duds.append(p)
+
+        for d in duds:
+            prox.remove(d)
 
         return prox
 
