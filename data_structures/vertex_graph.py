@@ -260,7 +260,7 @@ class VertexGraph:
             out = self.__dict__.copy()
             self.head = old_head
             return out
-        elif self.left is not None:
+        elif self.right is None:
             old_head = self.get_head()
             old_left = self.get_left()
 
@@ -275,7 +275,7 @@ class VertexGraph:
             self.left = old_left
 
             return out
-        elif self.right is not None:
+        elif self.left is None:
             old_head = self.get_head()
             old_right = self.get_right()
 
