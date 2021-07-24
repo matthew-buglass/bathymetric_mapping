@@ -63,3 +63,7 @@ graph_json = node_network.to_pretty_json()
 print(graph_json)
 new_graph = VertexGraph.from_json(graph_json)
 print(new_graph)
+
+with open("jsons/test_data.json", "w+") as f:
+    f.write(graph_json)
+    f.close()

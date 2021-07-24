@@ -1,16 +1,18 @@
 import json
+from importlib.machinery import SourceFileLoader
 
-from data_structures.vertex_point import VertexPoint
+# from data_structures.vertex_point import vp.VertexPoint
+vp = SourceFileLoader("vertex_point", "D:\\Bathymetric Mapping\\bathymetric_mapping_scripts\\data_structures\\vertex_point.py").load_module()
 
 
 class VertexGraph:
     def __init__(self, head=None, right=None, left=None):
-        self.head: VertexPoint = head
+        self.head: vp.VertexPoint = head
         self.right: VertexGraph = right
         self.left: VertexGraph = left
 
         if self.head is not None:
-            self.head = VertexPoint.from_json(json.dumps(head))
+            self.head = vp.VertexPoint.from_json(json.dumps(head))
 
             if left is not None:
                 self.left = VertexGraph.from_json(json.dumps(left))
@@ -20,8 +22,8 @@ class VertexGraph:
 
 
     @classmethod
-    def from_list(cls, l: list[VertexPoint]):
-        def from_list_helper(vert_list: list[VertexPoint], depth: int) -> VertexGraph:
+    def from_list(cls, l: list[vp.VertexPoint]):
+        def from_list_helper(vert_list: list[vp.VertexPoint], depth: int) -> VertexGraph:
             if len(vert_list) == 0:     # base case 1, empty list
                 return None
             elif len(vert_list) == 1:   # base case 2, list of one element
@@ -57,7 +59,7 @@ class VertexGraph:
     def is_empty(self) -> bool:
         return self.head is None
 
-    def get_head(self) -> VertexPoint:
+    def get_head(self) -> vp.VertexPoint:
         return self.head
 
     def get_left(self):
@@ -66,7 +68,7 @@ class VertexGraph:
     def get_right(self):
         return self.right
 
-    def set_head(self, vert: VertexPoint):
+    def set_head(self, vert: vp.VertexPoint):
         self.head = vert
 
     def set_left(self, graph):
@@ -110,7 +112,7 @@ class VertexGraph:
         else:
             return self.get_post_order_coordinates()
 
-    def get_vertices(self) -> list[VertexPoint]:
+    def get_vertices(self) -> list[vp.VertexPoint]:
         if self.left is None and self.right is None:
             return [self.head]
         elif self.left is None:
@@ -181,7 +183,7 @@ class VertexGraph:
 
     def range_search(self, x_range: (float, float)=None,
                      y_range: (float, float)=None,
-                     z_range: (float, float)=None) -> list[VertexPoint]:
+                     z_range: (float, float)=None) -> list[vp.VertexPoint]:
         """
         Returns a list of vertices that are within the range that was given
         :param x_range: (low, high) inclusive of the x coordinate range for the search
@@ -191,7 +193,7 @@ class VertexGraph:
         """
         def range_search_helper(obj: VertexGraph, depth: int, x_range: (float, float)=None,
                                 y_range: (float, float)=None,
-                                z_range: (float, float)=None) -> list[VertexPoint]:
+                                z_range: (float, float)=None) -> list[vp.VertexPoint]:
             if obj is None:  # base case if not an actual object
                 return []
             else:  # recursive case
@@ -237,7 +239,7 @@ class VertexGraph:
 
         return range_search_helper(self, 0, x_range, y_range, z_range)
 
-    def get_adjacent_within(self, vertex: VertexPoint, x_radius=-1, y_radius=-1, z_radius=-1) -> list[VertexPoint]:
+    def get_adjacent_within(self, vertex: vp.VertexPoint, x_radius=-1, y_radius=-1, z_radius=-1) -> list[vp.VertexPoint]:
         x_range = None
         y_range = None
         z_range = None
