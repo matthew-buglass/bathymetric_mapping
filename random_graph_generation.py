@@ -22,15 +22,16 @@ def print_order(order: int, network):
     print("Percent adjacent: {:.5f}%".format(order_adjacent.count(True) / len(order_adjacent) * 100))
 
 
-width = 10
-height = 10
-max_depth = -5
+width = 5
+height = 5
+abs_coefficient = 2
 
 verts = []
 
-for x in range(width):
-    for y in range(height):
-        z = random.random() * max_depth
+# making a hyperbolic paraboloid
+for x in range(-width, width+1):
+    for y in range(-height, height+1):
+        z = abs_coefficient * (x**2) + -abs_coefficient * (y**2)
         vert = VertexPoint()
         vert.set_coordinates(x, y, z)
         verts.append(vert)
