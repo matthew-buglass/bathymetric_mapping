@@ -22,8 +22,8 @@ class VertexGraph:
 
 
     @classmethod
-    def from_list(cls, l: list[vp.VertexPoint]):
-        def from_list_helper(vert_list: list[vp.VertexPoint], depth: int) -> VertexGraph:
+    def from_list(cls, l):
+        def from_list_helper(vert_list, depth: int) -> VertexGraph:
             if len(vert_list) == 0:     # base case 1, empty list
                 return None
             elif len(vert_list) == 1:   # base case 2, list of one element
@@ -112,7 +112,7 @@ class VertexGraph:
         else:
             return self.get_post_order_coordinates()
 
-    def get_vertices(self) -> list[vp.VertexPoint]:
+    def get_vertices(self):
         if self.left is None and self.right is None:
             return [self.head]
         elif self.left is None:
@@ -129,7 +129,7 @@ class VertexGraph:
             out.extend(self.right.get_vertices())
             return out
 
-    def get_in_order_coordinates(self) -> list[(float, float, float)]:
+    def get_in_order_coordinates(self):
         if self.left is None and self.right is None:
             return [self.head.get_coordinates()]
         elif self.left is None:
@@ -147,7 +147,7 @@ class VertexGraph:
             return out
 
 
-    def get_post_order_coordinates(self) -> list[(float, float, float)]:
+    def get_post_order_coordinates(self):
         if self.left is None and self.right is None:
             return [self.head.get_coordinates()]
         elif self.left is None:
@@ -164,7 +164,7 @@ class VertexGraph:
             out.extend([self.head.get_coordinates()])
             return out
 
-    def get_pre_order_coordinates(self) -> list[(float, float, float)]:
+    def get_pre_order_coordinates(self):
         if self.left is None and self.right is None:
             return [self.head.get_coordinates()]
         elif self.left is None:
@@ -183,7 +183,7 @@ class VertexGraph:
 
     def range_search(self, x_range: (float, float)=None,
                      y_range: (float, float)=None,
-                     z_range: (float, float)=None) -> list[vp.VertexPoint]:
+                     z_range: (float, float)=None):
         """
         Returns a list of vertices that are within the range that was given
         :param x_range: (low, high) inclusive of the x coordinate range for the search
@@ -239,7 +239,7 @@ class VertexGraph:
 
         return range_search_helper(self, 0, x_range, y_range, z_range)
 
-    def get_adjacent_within(self, vertex: vp.VertexPoint, x_radius=-1, y_radius=-1, z_radius=-1) -> list[vp.VertexPoint]:
+    def get_adjacent_within(self, vertex: vp.VertexPoint, x_radius=-1, y_radius=-1, z_radius=-1):
         x_range = None
         y_range = None
         z_range = None
