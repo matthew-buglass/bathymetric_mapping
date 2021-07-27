@@ -23,8 +23,8 @@ def print_order(order: int, network):
 
 
 width = 10
-height = 60
-abs_coefficient = 0.005
+height = 10
+abs_coefficient = 0.05
 
 verts = []
 
