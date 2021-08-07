@@ -22,9 +22,9 @@ def print_order(order: int, network):
     print("Percent adjacent: {:.5f}%".format(order_adjacent.count(True) / len(order_adjacent) * 100))
 
 
-width = 10
-height = 10
-abs_coefficient = 0.05
+width = 15
+height = 15
+abs_coefficient = 0.1
 
 verts = []
 

@@ -16,8 +16,6 @@ with open(file_name, "r") as f:
     data = json.load(f)
     f.close()
 
-#print(data)
-
 # remaking the graph and establishing the point proximity
 g = vg.VertexGraph.from_json(json.dumps(data))
 g.establish_euclidean_proximity_xy(1)
@@ -32,11 +30,3 @@ new_object = bpy.data.objects.new("hyperbolic_paraboloid", new_mesh)
 
 view_layer=bpy.context.view_layer
 view_layer.active_layer_collection.collection.objects.link(new_object)
-
-#bpy.ops.object.mode_set(mode='EDIT') 
-#bpy.ops.mesh.select_mode(type="VERT")
-#bpy.ops.mesh.select_all(action='SELECT')
-#bpy.ops.mesh.edge_face_add()   
-#bpy.ops.mesh.select_all(action='DESELECT') 
-#bpy.ops.object.mode_set(mode='OBJECT') 
-#bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY', center='MEDIAN')
