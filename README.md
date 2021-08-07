@@ -5,6 +5,8 @@ However, using 3D modeling software and 3D printing, we can create a more emersi
 
 That 3D model can be scaled, edited, and printned in a 3D printer to create ultra-accurate physical models of underwater structures.
 
+[![Blender Script generating a hyperbolic parabaloid mesh from a disperse point map](https://img.youtube.com/vi/AwUt0oBUfQk/0.jpg)](https://youtu.be/AwUt0oBUfQk)
+
 # Current Stable Functionalities and Completed Milestones
 - Re-wiring of fish finder power supply to quick clip into weather proof connectors for both 120V wall outlet or a Marine boat battery
 - Storage and serialization of data points
