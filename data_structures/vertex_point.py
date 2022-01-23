@@ -34,6 +34,8 @@ class VertexPoint:
     def from_json(cls, j):
         """
         Instatiates a vertex from a json object
+        
+        :param j: a json representation of a VertexPoint
         """
         return VertexPoint(**json.loads(j))
 
