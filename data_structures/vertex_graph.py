@@ -2,11 +2,15 @@ import json
 from importlib.machinery import SourceFileLoader
 
 # from data_structures.vertex_point import vp.VertexPoint
+# This is required becasue it is used by the blender files
 vp = SourceFileLoader("vertex_point", "D:\\Bathymetric Mapping\\bathymetric_mapping_scripts\\data_structures\\vertex_point.py").load_module()
 
 
 class VertexGraph:
     def __init__(self, head=None, right=None, left=None):
+        """
+        Recursively build a graph
+        """
         self.head: vp.VertexPoint = head
         self.right: VertexGraph = right
         self.left: VertexGraph = left
@@ -23,6 +27,11 @@ class VertexGraph:
 
     @classmethod
     def from_list(cls, l):
+        """
+        Recursively build a VertexGraph from a provided list of VertexPoints
+        
+        :param l: list of VertexPoints
+        """
         def from_list_helper(vert_list, depth: int) -> VertexGraph:
             if len(vert_list) == 0:     # base case 1, empty list
                 return None
@@ -55,33 +64,79 @@ class VertexGraph:
                 return g
 
         return from_list_helper(l, 0)
+    
+    @classmethod
+    def from_json(cls, j):
+        """
+        Recursively build a VertexGraph from a provided json object
+        
+        :param l: list of VertexPoints
+        """
+        return VertexGraph(**json.loads(j))
 
     def is_empty(self) -> bool:
+        """
+        Returns whether the graph is empty
+        
+        :return bool: True if the graph is empty, False otherwise
+        """
         return self.head is None
 
     def get_head(self) -> vp.VertexPoint:
+        """
+        Returns the current vertex point
+        
+        :return VertexPoint: The VertexPoint at the root of hte current tree
+        """
         return self.head
 
     def get_left(self):
+        """
+        Returns the left subgraph
+        
+        :return VertexGraph: The VertexGraph to the left of the root
+        """
         return self.left
 
     def get_right(self):
+        """
+        Returns the right subgraph
+        
+        :return VertexGraph: The VertexGraph to the right of the root
+        """
         return self.right
 
     def set_head(self, vert: vp.VertexPoint):
+        """
+        Set the current vertex
+        
+        :param vert: The VertexPoint to add to the root of the graph
+        """
         self.head = vert
 
     def set_left(self, graph):
+        """
+        Set the left subtree
+        
+        :param graph: The VertexGraph to become the left subgraph
+        """
         self.left = graph
 
     def set_right(self, graph):
+        """
+        Set the raft subtree
+        
+        :param graph: The VertexGraph to become the right subgraph
+        """
         self.right = graph
 
     def to_string_coordinates(self, order: int):
         """
-
+        Returns a string representation of the graph in the given order
+        
         :param order: 0 = in order; 1 = pre order; 2 = post order
-        :return:
+        
+        :return String: A string representation of the graph
         """
         output = ""
         if order == 0:
@@ -101,9 +156,11 @@ class VertexGraph:
 
     def get_order_coordinates(self, order: int):
         """
-
+        Returns a list of the verticies in the graph in the given order
+        
         :param order: 0 = in order; 1 = pre order; 2 = post order
-        :return:
+        
+        :return List: A list of tuples in the format (x, y, z)
         """
         if order == 0:
             return self.get_in_order_coordinates()
@@ -113,6 +170,11 @@ class VertexGraph:
             return self.get_post_order_coordinates()
 
     def get_vertices(self):
+        """
+        Returns a list of the verticies in the graph from an in-order traversal
+        
+        :return List: A list of VertexPoints
+        """
         if self.left is None and self.right is None:
             return [self.head]
         elif self.left is None:
@@ -130,6 +192,13 @@ class VertexGraph:
             return out
 
     def get_in_order_coordinates(self):
+        """
+        Returns a list of the verticies in the graph from an in-order traversal
+        
+        :param order: 0 = in order; 1 = pre order; 2 = post order
+        
+        :return List: A list of tuples in the format (x, y, z)
+        """
         if self.left is None and self.right is None:
             return [self.head.get_coordinates()]
         elif self.left is None:
@@ -148,6 +217,13 @@ class VertexGraph:
 
 
     def get_post_order_coordinates(self):
+        """
+        Returns a list of the verticies in the graph from an post-order traversal
+        
+        :param order: 0 = in order; 1 = pre order; 2 = post order
+        
+        :return List: A list of tuples in the format (x, y, z)
+        """
         if self.left is None and self.right is None:
             return [self.head.get_coordinates()]
         elif self.left is None:
@@ -165,6 +241,13 @@ class VertexGraph:
             return out
 
     def get_pre_order_coordinates(self):
+        """
+        Returns a list of the verticies in the graph from an pre-order traversal
+        
+        :param order: 0 = in order; 1 = pre order; 2 = post order
+        
+        :return List: A list of tuples in the format (x, y, z)
+        """
         if self.left is None and self.right is None:
             return [self.head.get_coordinates()]
         elif self.left is None:
@@ -186,11 +269,14 @@ class VertexGraph:
                      z_range: (float, float)=None):
         """
         Returns a list of vertices that are within the range that was given
+        
         :param x_range: (low, high) inclusive of the x coordinate range for the search
         :param y_range: (low, high) inclusive of the y coordinate range for the search
         :param z_range: (low, high) inclusive of the z coordinate range for the search
+        
         :return: Returns a list of vertices that are within the range that was given
         """
+        
         def range_search_helper(obj: VertexGraph, depth: int, x_range: (float, float)=None,
                                 y_range: (float, float)=None,
                                 z_range: (float, float)=None):
@@ -240,6 +326,16 @@ class VertexGraph:
         return range_search_helper(self, 0, x_range, y_range, z_range)
 
     def get_adjacent_within(self, vertex: vp.VertexPoint, x_radius=-1, y_radius=-1, z_radius=-1):
+        """
+        Returns a list of vertices that are within a a specified x, y, and z radii from a given vertex
+        
+        :param x_radius: inclusive radius of the x coordinate range for the search
+        :param y_radius: inclusive radius of the y coordinate range for the search
+        :param z_radius: inclusive radius of the z coordinate range for the search
+        
+        :return: Returns a list of vertices that are within the range that was given
+        """
+        
         x_range = None
         y_range = None
         z_range = None
@@ -257,6 +353,14 @@ class VertexGraph:
         return points
 
     def get_xy_euclidean_adjacent(self, vert, distance):
+        """
+        Returns a list of vertices that are within a a specified euclidean radius of a given vertex
+        
+        :param vert: a VertexPoint around which to search
+        :param distance: the radius around the vertex to search
+        
+        :return: Returns a list of vertices that are within the range that was given
+        """
         prox = self.get_adjacent_within(vert, distance, distance)
         duds = []
 
@@ -272,9 +376,19 @@ class VertexGraph:
         return prox
 
     def get_blender_vertices(self):
+        """
+        Gets a list of verticies for building blender meshes
+        
+        :return List: returns a list of tuples to give the BlenderPy library for building meshes
+        """
         return self.get_in_order_coordinates()
 
     def get_blender_edges(self):
+        """
+        Gets a list of edges for building blender meshes
+        
+        :return List: returns a list of tuples to give the BlenderPy library for building meshes
+        """
         out = []
         verts = self.get_vertices()
 
@@ -290,12 +404,27 @@ class VertexGraph:
         return out
 
     def get_blender_faces(self):
+        """
+        Gets a list of faces for building blender meshes
+        
+        :return List: returns a list of tuples to give the BlenderPy library for building meshes
+        """
         return []
 
     def get_blender_data(self):
+        """
+        Gets a list of verticies for building blender meshs
+        
+        :return Tuple: returns a tuple of lists (Vertices, Edges, Faces) with all data required to give the BlenderPy library for building meshes
+        """
         return self.get_blender_vertices(), self.get_blender_edges(), self.get_blender_faces()
 
     def establish_proximity_xy(self, distance):
+        """
+        Creates edges between vertices witin the given distance on the x-y plane
+        
+        :param distance: the distance within which to connect verticies
+        """
         verts = self.get_vertices()
 
         for v in verts:
@@ -306,6 +435,11 @@ class VertexGraph:
                 v.add_vertex(p, p_idx)
 
     def establish_euclidean_proximity_xy(self, distance):
+        """
+        Creates edges between vertices witin the given euclidean distance on the x-y plane
+        
+        :param distance: the distance within which to connect verticies
+        """
         verts = self.get_vertices()
 
         for v in verts:
@@ -316,6 +450,11 @@ class VertexGraph:
                 v.add_vertex(p, p_idx)
 
     def to_dict(self) -> dict:
+        """
+        Creates a dictionary representation of the graph for converting to a json object
+        
+        :return dict: and dictionary of the VertexGraph
+        """
         if self.left is None and self.right is None:
             old_head = self.get_head()
             self.head = self.get_head().to_dict()
@@ -373,12 +512,13 @@ class VertexGraph:
             return out
 
     def to_pretty_json(self) -> json:
+        """
+        Creates a json object of the Vertex Graph
+        
+        :return json: a json object of the VertexGraph
+        """
         self_dict = self.to_dict()
 
         json_out = json.dumps(self_dict, indent=4)
 
         return json_out
-
-    @classmethod
-    def from_json(cls, j):
-        return VertexGraph(**json.loads(j))
