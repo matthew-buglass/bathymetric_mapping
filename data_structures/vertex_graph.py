@@ -10,6 +10,10 @@ class VertexGraph:
     def __init__(self, head=None, right=None, left=None):
         """
         Recursively build a graph
+        
+        :param head: the VertexPoint to be place at the root of the graph
+        :param right: the right VertexGraph subgraph
+        :param left: the left VertexGraph subgraph
         """
         self.head: vp.VertexPoint = head
         self.right: VertexGraph = right
@@ -70,7 +74,7 @@ class VertexGraph:
         """
         Recursively build a VertexGraph from a provided json object
         
-        :param l: list of VertexPoints
+        :param j: json representation of a VertexGraph
         """
         return VertexGraph(**json.loads(j))
 
