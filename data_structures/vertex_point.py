@@ -167,7 +167,7 @@ class VertexPoint:
         """
         return self.z
 
-    def get_coordinates(self) -> (float, float, float):
+    def get_coordinates(self):
         """
         Gets a tuple of teh vertex's co-ordinates
         

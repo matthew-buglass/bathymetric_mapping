@@ -13,7 +13,7 @@ optimize their sample rate for hte accuracy that they need.
 """
 
 # Open the google maps image
-file = filedialog.askopenfilename(initialdir="D:\\",
+file = filedialog.askopenfilename(initialdir="C:\\",
                                   title="Select blue and green google image screenshot",
                                   filetypes=[("PNG files", "*.png")])
 img = Image.open(file)

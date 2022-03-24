@@ -12,12 +12,21 @@ Script to build a mesh from a vertex graph.
 CAN ONLY BE RUN FROM THE SCRIPTING TERMINAL IN THE BLENDER APPLICATON
 """
 
+# Changing the working directory to load modules
+script_root = os.path.dirname(bpy.data.filepath)
+script_root = script_root.split("\\")
+script_root = script_root[0:len(script_root)-1]
+script_root.append("bathymetric_mapping_scripts")
+script_root = "\\".join(script_root)
+os.chdir(script_root)
+print(os.getcwd())
+
 # imports the module containing the VertexGraph data structure from the given absolute path
-vg = SourceFileLoader("vertex_graph", "D:\\Bathymetric Mapping\\bathymetric_mapping_scripts\\data_structures\\vertex_graph.py").load_module()
+vg = SourceFileLoader("vertex_graph", script_root+"\\data_structures\\vertex_graph.py").load_module()
 
 # load the graph from the given absolute path
-print(os.getcwd())
-file_name = "D:\\Bathymetric Mapping\\bathymetric_mapping_scripts\\jsons\\test_data.json"
+data_filename = "test_data.json"
+file_name = script_root+"\\jsons\\" + data_filename
 
 with open(file_name, "r") as f:
     data = json.load(f)

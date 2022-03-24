@@ -1,9 +1,10 @@
 import json
 from importlib.machinery import SourceFileLoader
+import os
 
 # from data_structures.vertex_point import vp.VertexPoint
 # This is required becasue it is used by the blender files
-vp = SourceFileLoader("vertex_point", "D:\\Bathymetric Mapping\\bathymetric_mapping_scripts\\data_structures\\vertex_point.py").load_module()
+vp = SourceFileLoader("vertex_point", os.getcwd()+"\\data_structures\\vertex_point.py").load_module()
 
 
 class VertexGraph:
@@ -268,9 +269,9 @@ class VertexGraph:
             out.extend(self.right.get_pre_order_coordinates())
             return out
 
-    def range_search(self, x_range: (float, float)=None,
-                     y_range: (float, float)=None,
-                     z_range: (float, float)=None):
+    def range_search(self, x_range=None,
+                     y_range=None,
+                     z_range=None):
         """
         Returns a list of vertices that are within the range that was given
         
@@ -281,9 +282,9 @@ class VertexGraph:
         :return: Returns a list of vertices that are within the range that was given
         """
         
-        def range_search_helper(obj: VertexGraph, depth: int, x_range: (float, float)=None,
-                                y_range: (float, float)=None,
-                                z_range: (float, float)=None):
+        def range_search_helper(obj: VertexGraph, depth: int, x_range=None,
+                                y_range=None,
+                                z_range=None):
             if obj is None:  # base case if not an actual object
                 return []
             else:  # recursive case
